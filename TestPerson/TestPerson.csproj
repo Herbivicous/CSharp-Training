@@ -14,7 +14,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\ConsoleApp2\TP.csproj" />
+    <ProjectReference Include="..\TP\TP.csproj" />
   </ItemGroup>
 
 </Project>

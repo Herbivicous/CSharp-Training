@@ -1,10 +1,5 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using TP.Client;
-using TP.Utils;
 
 namespace TP.BankLib.model
 {
