@@ -10,7 +10,7 @@ namespace TP.Main
     class Program
     {
 
-        static void Main(string[] args)
+        public static void Main(string[] args)
         {
             Random r = new Random();
             Bank b = new Bank(new PositiveDouble(0.005), new TimeSpan(10 * 365, 0, 0));
@@ -25,7 +25,7 @@ namespace TP.Main
 
             Console.WriteLine(b.ComputeTotalInterest(DateTime.Now));
 
-            b.CreditInterestForAllSavingAccount(DateTime.Now);
+            b.CreditInterestForAllSavingAccounts(DateTime.Now);
 
             Console.WriteLine(b.GetOperationForAccount("toto2").BankAccount);
             Console.WriteLine(b.GetOperationForAccount("tata2").BankAccount);
@@ -41,6 +41,8 @@ namespace TP.Main
 
             Console.WriteLine(b);
 
+            Console.WriteLine(b.GetTotalSolde());
+            Console.WriteLine(b.GetTotalSoldeAsync().Result);
         }
     }
 }

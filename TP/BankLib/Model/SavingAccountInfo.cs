@@ -48,5 +48,7 @@ namespace TP.BankLib.model
         {
             return _bankAccount.ToString();
         }
+
+        public async Task<PositiveDouble> GetSoldeAsync() => await _bankAccount.GetSoldeAsync();
     }
 }

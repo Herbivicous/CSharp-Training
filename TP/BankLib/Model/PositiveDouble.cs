@@ -76,5 +76,15 @@ namespace TP.BankLib
         {
             return p1.Value > p2.Value;
         }
+
+        public static bool operator >=(PositiveDouble p1, PositiveDouble p2)
+        {
+            return p1.Value >= p2.Value;
+        }
+
+        public static bool operator <=(PositiveDouble p1, PositiveDouble p2)
+        {
+            return p1.Value <= p2.Value;
+        }
     }
 }

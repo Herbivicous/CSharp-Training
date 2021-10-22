@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Threading.Tasks;
 using TP.Client;
 
 namespace TP.BankLib.model
@@ -30,6 +31,12 @@ namespace TP.BankLib.model
             numero, owner, DateTime.Now, new PositiveDouble(0)
         )
         { }
+
+        public async Task<PositiveDouble> GetSoldeAsync()
+        {
+            await Task.Delay(1000);
+            return Solde;
+        }
 
         public override string ToString() => $"N°{Numero} ({Owner}) created on {CreationDate} : {Solde.Value}€";
     }

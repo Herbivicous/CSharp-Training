@@ -16,5 +16,7 @@ namespace TP.BankLib.model
         public DateTime CreationDate { get; }
 
         public PositiveDouble Solde { get; set; }
+
+        public Task<PositiveDouble> GetSoldeAsync();
     }
 }
